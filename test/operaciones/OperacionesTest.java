@@ -101,7 +101,7 @@ public class OperacionesTest {
     /**
      * Test of mayor method, of class Operaciones.
      */
-    
+    @Ignore
     @Test
     public void testIgual() {
         System.out.println("Igual");
@@ -116,17 +116,15 @@ public class OperacionesTest {
     /**
      * Test of sumarVector method, of class Operaciones.
      */
-    @Ignore
+    
     @Test
     public void testSumarVector() {
         System.out.println("sumarVector");
-        int[] numeros = null;
+        int[] numeros = {1, 2, 4};
         Operaciones instance = new Operaciones();
-        int expResult = 0;
+        int expResult = 7;
         int result = instance.sumarVector(numeros);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
