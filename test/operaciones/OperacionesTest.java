@@ -56,7 +56,7 @@ public class OperacionesTest {
     /**
      * Test of sumarPar method, of class Operaciones.
      */
-    
+    @Ignore
     @Test
     public void testSumarImpar() {
         System.out.println("sumarImpar");
@@ -71,14 +71,14 @@ public class OperacionesTest {
     /**
      * Test of mayor method, of class Operaciones.
      */
-    @Ignore
+    
     @Test
     public void testMayorA() {
         System.out.println("mayor A");
         Operaciones instance = new Operaciones();
         int a = 3;
         int b = 2;
-        int expResult = 0;
+        int expResult = 3;
         int result = instance.mayor(a, b);
         assertEquals(expResult, result);
     }
